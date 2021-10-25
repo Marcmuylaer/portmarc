@@ -1,9 +1,9 @@
 import React from 'react'
-import Typed from 'react-styled'
+import Typed from 'react-typed'
 
-const Header = () => {
-    return 
-        <div className = 'header-wraper'>
+export default function Header() {
+    return (
+        <div className = 'header-wrapper'>
           <div className= 'main-info'>
             <h1> Front-end dev </h1>
             <Typed 
@@ -13,10 +13,11 @@ const Header = () => {
              backspeed={60}
              loop
             />
-            <a href= '#' className={btn-main}>Contact-me</a>
+            <a href= '#' className='main-offer-button'> Contact-me </a>
           </div>  
         </div>
+    )
     
 }
 
-export default header
+

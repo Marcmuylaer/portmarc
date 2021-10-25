@@ -1,13 +1,14 @@
-import React               from 'react';
+import React, { Component } from 'react'
 import wolf                from '../logo.png';
-// font awesome
-//import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
-//import { FaBars }        from '@fontawesome/free-solid-svg-icons';
-import { FaBeer } from 'react-icons/fa';
+// React font awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars }          from '@fortawesome/free-solid-svg-icons';
+import { FaBeer }          from 'react-icons/fa';
 
 
 
-export const Navbar = () => {
+export default class Navbar extends Component {
+  render() {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="contenaire ">
@@ -25,11 +26,11 @@ export const Navbar = () => {
             aria-label="Toggle navigation"
           >    
           
-            <FontAwesomeIcon icon={FaBeer} style={{ color: '#fff' }} />
+            <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }} />
 
           </button>
 
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
                   Home
@@ -43,31 +44,31 @@ export const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  services
+                  Services
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  how work
+                  Experience
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  portfolio
+                  Portfolio
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  contact
+                  Contact-us
                 </a>
               </li>
             </ul>
           </div>
-        
       </nav>
-    );
+    )
+  }
 }
 
 
-export default Navbar;
+
 

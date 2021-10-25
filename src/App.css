@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rajdhani:wght@300&family=Roboto+Condensed&display=swap');
+
 .App {
   text-align: center;
 }
@@ -128,14 +132,13 @@ nav ul li {
 
 /********************Header******************/
 
-.header-wraper {
+.header-wrapper {
                 position: relative;
                 background: url(computer-bg.jpg) no-repeat;
                 background-size: cover ;
                 height: 90vh;
 
                 } 
-
 
 .main-info {
             display:flex;
@@ -144,7 +147,7 @@ nav ul li {
             left:0;
             right:0;
             bottom:0;
-            flex-direction:column; 
+            flex-direction: column; 
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -160,38 +163,27 @@ nav ul li {
 } 
 
 @media(max-width: 768px){
-   .main-info h1{
-     font-size: 1.5rem !important;
-   }
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
 
+  }
 }
-
-
-
-
-
 
 /********************Typed text****************/
 
 .typed-text { 
              font-size: 2rem;
-             color: var (--primary-white);
-             
+             color: var(--primary-white);             
                
 }
 
-@media(max-width: 768px){
-   .main-info h1{
-     font-size: 1.7rem !important;
-   }
-   .typed-text{
-     font-size: 1.3rem !important;
 
-   }
-}
 /********************Typed text****************/
 
-.btn-main{
+.main-offer-button {
 
           border: 1px solid var(--primary-red);
           text-transform: uppercase;
@@ -202,7 +194,7 @@ nav ul li {
 
 }
 
-.btn-main:hover {
+main-offer-button:hover {
                  text-decoration : none;
                  background-color: var(--primary-hover-red);
                  color: var(--primary-white);
@@ -211,24 +203,22 @@ nav ul li {
 
 }
 
-
-
 /********************Particles js****************/
-/* .tsparticles-canvas-el {
+ .tsparticles-canvas-el {
                          position : absolute;
                          height:100vh;
                          width:100vh;
-                         z-index:1;
+                         z-index: 1;
 
 
 
- }*/
+ }
 
- /*@media(max-width: 760px){
-        .tsparticles-canvas {
+ @media(max-width: 760px){
+        .particles-canvas {
                              display: none;      
 
         }
 
 
- }*/
+ }

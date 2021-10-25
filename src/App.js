@@ -1,6 +1,7 @@
 
-import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Particles from 'react-particles-js';
+//import Particles from "react-tsparticles";
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import './App.css';
@@ -11,6 +12,7 @@ function App() {
     <Particles 
       className='particles-canvas'
       params={{
+            particles:{
               number:{
                 value:30,
                 density:{
@@ -21,10 +23,11 @@ function App() {
               shape:{
                 type:'circle',
                 stroke:{
-                  with:6,
+                  with: 6,
                   color: '#f9ab00'
                 }
               }
+            }             
 
       }}
     
